@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Number:</h1>
+   <p id="num"></p>
+    <p id="name"></p>
+    <p id="cal"></p>
+    <p id="demo"></p>
+   <p id="dem"></p>
+   <script>
+    let x=20;
+    let a,b,c;
+    a=5;
+    b=10;
+    c=a+b;
+    document.getElementById("cal").innerHTML=  a + " and " + b +" sum is " + c;
+    const fname="john";
+    document.getElementById("num").innerHTML=10.56;
+    document.getElementById("name").innerHTML= fname + " is " + x + "years old " +typeof 3;
+    try{
+        const pi=3.123455;
+        document.getElementById("demo").innerHTML=pi;   
+    }
+    catch(err){
+        document.getElementById("demo").innerHTML=err;
+    }
+    let d=10;
+    d *=5;
+    document.getElementById("dem").innerHTML=d;
+   </script>
+</body>
+</html>
